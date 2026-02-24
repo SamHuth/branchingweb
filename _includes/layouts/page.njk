@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    {# Meta Data #}
+    {% include "partials/meta_data.njk" %}
+    {# Schema Data #}
+    {% include "partials/schema_data.njk" %}
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body id="site">
+    <a href="#content">Skip to content</a>
+    {% include "partials/navigation.njk" %}
+    {% include "partials/header.njk" %}
+    {% include "partials/breadcrumbs.njk" %}
+    <main id="content">
+        {{ content | safe }}
+    </main>
+    {% include "partials/footer.njk" %}
+
+  </body>
+</html>
