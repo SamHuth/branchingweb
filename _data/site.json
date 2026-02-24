@@ -1,11 +1,11 @@
 {
-  "title": "Company Name",
-  "domain": "",
+  "title": "Branching Web",
+  "domain": "branchingweb.com.au",
   "url": "https://branchingweb.com.au",
   "separator":" - ",
   "author": {
-    "name": "",
-    "email": "",
-    "role": ""
+    "name": "Samuel Huth",
+    "email": "sam@branchingweb.com.au",
+    "role": "Owner"
   }
 }

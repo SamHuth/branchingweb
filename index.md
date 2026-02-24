@@ -1,5 +1,5 @@
 ---
-layout: /layouts/page.njk
+layout: /layouts/home.njk
 title: Home Page
 meta:
   description: "This is the meta description for the home page"

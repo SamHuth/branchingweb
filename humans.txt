@@ -1,0 +1,11 @@
+/* TEAM */
+Name: Samuel Huth
+Role: Owner
+Email: sam@branchingweb.com.au
+Site: https://branchingweb.com.au
+
+/* SITE */
+Name: Branching Web
+Domain: branchingweb.com.au
+URL: https://branchingweb.com.au
+Last updated: 2026-02-25
