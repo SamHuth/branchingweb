@@ -9,7 +9,20 @@
 ## Project
 Information about the project architecture can be found at /claude-content/PROJECT.md
 
+## About Branching Web
+### Overview
+Branching Web is an Australian development studio helping small businesses establish their digital presence. We specialise in website development, web-based business solutions, search engine optimisation, and onboarding privacy-focused software for starting companies. We want 
 
+### Core
+#### Vision
+To be the trusted partner for Australian small businesses launching their digital presence and adopting business technology.
+#### Mission
+To deliver digital solutions that solve real problems and support businesses as they establish their operations and grow.
+#### Values
+- Resilience - We build reliable systems that function effectively without fragile dependencies.
+- Privacy - We respect your security and your customers' personal data. We never capture, store, or transfer information unnecessarily.
+- Humans - We care about the solutions we craft and the people who use them.
+- Education - We provide clear information and guidance, empowering you to become confident and independent with technology.
 
 ## About this project
 
