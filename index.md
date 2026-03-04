@@ -1,37 +1,35 @@
 ---
 layout: /layouts/home.njk
-title: "Your Digital Presence, Built to Last"
+title: "Start simple. Scale when you're ready"
 menutitle: "Home"
 meta:
-  description: "Branching Web is an Australian development studio helping small businesses build websites, web applications, and digital foundations — built for resilience, privacy, and independence."
+  description: "Branching Web is an Australian development studio helping small businesses and entrepreneurs build websites, tools and develop digital foundations on resilience, privacy, and independence."
 date: Last Modified
 tags: menu
 ---
 
-## Websites and bootstrapping for small businesses that are serious about getting started.
-Getting your business started is a hard process and worrying about websites and digital technology shouldn't put you off. Branching Web is a development studio that helps Australian small business get a step-up in the digital landscape. We are here to construct and manage websites, software and processes for the digital side of your business, so you can focus on your core product and services. We believe in creating privacy respecting technology that is built to be resilient and solve the problems in efficient ways that align with your work.
+## Digital foundations for businesses that want to start strong.
+Getting your business started is a difficult process, and worrying about websites and which technology to use shouldn't be stressful. Branching Web is a development studio that helps Australian small business get a step-up in the digital landscape. We are here to manage websites, software and processes for the digital side of your business, so you can focus on your core product and services. We believe in creating privacy respecting technology that is built to be resilient and efficiently solve your unique business problems.
+
 ### We are Branching Web
-Branching Web is an Australian development studio built for small businesses. We work closely with founders, operators, and early-stage teams to help them establish a digital presence and adopt the right technology from day one — without the bloat, the jargon, or the vendor lock-in.
 
-We believe in building things that last. That means resilient systems without fragile dependencies, genuine respect for your customers' data, and solutions that actually solve the problem at hand. We also believe you should understand what you're using — so we take the time to educate, not just execute.
+Branching Web is here to support small businesses and help solve unique business problems. We work closely with founders, entrepreneurs, and early-stage teams to help them develop digital technologies and adopt usable systems from day one.
+
+  
+We believe in building purposeful software that respects your customers and stands the test of time. This means crafting resilient software without fragile dependencies, having a genuine care for your customer's experience and personal data. We also believe that you should fully understand what you're using. We take the time to educate you along the way, so you are aware of what your systems are capable of and how you can iterate on them as you grow.
+
 ### Here's how we can help
-We offer three core service areas:
+**Website Design & Development**
+We design and develop websites and ecommerce stores that represent your business and scale with your visitors. We are available for projects, long term support, critical bug fixes, and scheduled development hours to keep your website operating efficiently.
 
-**Website Design & Development** — From simple business websites to full ecommerce builds, we design and develop sites that represent your business well and perform reliably. We also offer ongoing support, bug fixes, and retainer hours for businesses that need a steady hand.
+**Web Applications**
+Custom dashboards, third-party integrations, data connections, and systems automation. If your business need visibility or workflow efficiency, we'll build something that solves your problems.
 
-**Web Applications** — Custom dashboards, third-party integrations, data connections, and systems automation. If your business has a workflow problem that off-the-shelf software can't solve, we'll build something that can.
+**Business Support**
+We help new businesses get the foundational tools right: AI-assisted workflows, privacy-focused software setup (custom domain email addresses, cloud storage, VPN, password management), SEO, analytics, and marketing processes.
 
-**Business Support** — We help new businesses get the foundational tools right: AI-assisted workflows, privacy-focused software setup (custom domain email, cloud storage, VPN, password management), SEO, analytics, and marketing infrastructure.
 ### What makes us different
-**We're built for small business.** We're not an agency chasing enterprise contracts. Everything we do is designed around the realities of running a small business — tight budgets, fast timelines, and the need to get things right the first time.
-
-**We take privacy seriously.** We never capture, store, or transfer your data or your customers' data unnecessarily. We'll also help you choose tools that share that philosophy.
-
-**We build for independence.** Our goal isn't to make you dependent on us. We explain what we've built, how it works, and how to use it — so you walk away confident, not reliant.
-
-**We're reliable.** We build systems without unnecessary fragility. And when something goes wrong, we fix it — bugs under 30 minutes are on us.
+Everything we do is designed around tight budgets, rapid iteration and the making you services easier to deliver. We want you to be supported and educated around technology so you have the confidence to drive your future digital endeavours and can become technologically independent. 
 
 ### Let's start the conversation
-Getting started is straightforward. Tell us a bit about your business and what you're trying to achieve, and we'll take it from there.
-
-You can **request a callback** or fill in our details contact below. We'll be in touch to talk through your project and figure out the best path forward.
+Tell us about your business and what you're trying to solve. Request a callback from our team or fill in our detailed project form and we can start collaborating on your business goals.

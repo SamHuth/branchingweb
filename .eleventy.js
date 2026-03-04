@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('css');
   eleventyConfig.addPassthroughCopy({ 'robots.txt': 'robots.txt' });
   eleventyConfig.addPassthroughCopy({ 'humans.txt': 'humans.txt' });
+  eleventyConfig.addPassthroughCopy({ 'contact.php': 'contact.php' });
   eleventyConfig.addPassthroughCopy({ 'sitemap.xml': 'sitemap.xml' });
 
   // Current Year

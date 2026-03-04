@@ -1,4 +1,20 @@
 /* Utility Classes */
 @layer utility {
-
+    [href="#content"]{
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        grid-area: "skip";
+    }
+    
+    [href="#content"]:focus{
+        position: fixed;
+        width: auto;
+        height: auto;
+        left: 1rem;
+        top: 1rem;
+    }
 }
