@@ -17,4 +17,9 @@
         left: 1rem;
         top: 1rem;
     }
+
+    body.lean{
+        max-width: 60ch;
+    }
+
 }

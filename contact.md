@@ -8,5 +8,6 @@ date: Last Modified
 tags: menu
 ---
 
-# Copy the html of this generated page and wrap around the php logic and inputs of the contact.php file
 [Home](/)
+
+# Make this a form and use netlify action to save it

@@ -7,11 +7,12 @@
     {% include "partials/schema_data.njk" %}
     <link rel="stylesheet" href="/css/main.css">
   </head>
-  <body id="site">
+  <body id="site" class="lean">
     <a href="#content">Skip to content</a>
     <main id="content">
-        {{ content | safe }}
+      {{ content | safe }}
+      {% include "partials/contact_form.njk" %}
     </main>
-
+      {% include "partials/footer.njk" %}
   </body>
 </html>

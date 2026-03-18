@@ -1,0 +1,66 @@
+<section>
+    <form>
+        <fieldset>
+            <legend>
+                Contact information
+            </legend>
+            <label for="name">
+                Full Name
+                <input type="text" name="name" id="input-name" value="" autocomplete="name" required />
+            </label>
+            <label for="email">
+                Email Address
+                <input type="email" name="email" id="input-email" value="" autocomplete="email" required />
+            </label>
+            <label for="phone">
+                Phone Number
+                <input type="tel" name="phone" id="input-phone" value="" autocomplete="tel" required />
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Preferred contact method
+            </legend>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">PHONE</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">EMAIL</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                About my business
+            </legend>
+            <label for="company-name">
+                Company Name
+                <input type="text" name="company-name" id="input-company-name" value="" autocomplete="organization" required />
+            </label>
+            <label for="company-industry">
+                Industry
+                <input type="text" name="company-industry" id="input-company-industry" value="" required />
+            </label>
+            <label for="company-name">
+                Business summary
+                <textarea name="company-summary" id="input-company-summary" value=""></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                What do I need help with?
+            </legend>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Confirm
+            </legend>
+            <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat" required>
+            <label for="vehicle4"> I consent to Branching Web saving my personal details and contacting me</label><br>
+            <button type="submit">aa</button>
+        </fieldset>
+    </form>
+</section>

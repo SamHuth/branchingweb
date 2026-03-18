@@ -1,13 +1,70 @@
 /* HTML Elements */
 @layer html {
 
+    :root{
+        /* Colors */
+        --primary: #2f5ebd;
+        --secondary: #cee3f8;
+        --sucess: #3ebb4a;
+        --error: #dd3e3e;
+        --text: #3b3b3b;
+        --white: #ffffff;
+        --grey: #ececec;
+        --black: #181818;
+        
+        /* Font Size */
+        --step--2: clamp(0.7813rem, 0.9246rem + -0.185vw, 0.8784rem);
+        --step--1: clamp(0.9372rem, 0.9371rem + 0.0006vw, 0.9375rem);
+        --step-0: clamp(1rem, 0.9405rem + 0.2381vw, 1.125rem);
+        --step-1: clamp(1.067rem, 0.9322rem + 0.539vw, 1.35rem);
+        --step-2: clamp(1.1385rem, 0.9092rem + 0.9172vw, 1.62rem);
+        --step-3: clamp(1.2148rem, 0.8675rem + 1.389vw, 1.944rem);
+        --step-4: clamp(1.2962rem, 0.8025rem + 1.9746vw, 2.3328rem);
+        --step-5: clamp(1.383rem, 0.7085rem + 2.6978vw, 2.7994rem);
+    }
+
     body{
         max-width: 1200px;
         max-width: 90ch;
         margin: 0 auto;
+        background-color: var(--white);
     }
+
     nav, header, main, footer{
-        background: #eee;
+        background-color: var(--grey);
+        color: var(--text);
         
+    }
+
+    *{
+        font-size: var(--step-0);
+    }
+    
+    h1{
+        font-size: var(--step-5);
+    }
+
+    h2{
+        font-size: var(--step-4);
+    }
+
+    h3{
+        font-size: var(--step-3);
+    }
+
+    h4{
+        font-size: var(--step-2);
+    }
+
+    h5{
+        font-size: var(--step-1);
+    }
+
+    h5{
+        font-size: var(--step-0);
+    }
+
+    small{
+        font-size: var(--step--2);
     }
 }
