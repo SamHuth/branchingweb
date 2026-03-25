@@ -3,16 +3,21 @@
 
     :root{
         /* Colors */
-        --primary: #2f5ebd;
+        --primary: #345ec1;
+        --primary-alt: #211e8b;
         --secondary: #cee3f8;
-        --sucess: #3ebb4a;
+        --accent: #ffdc53;
+        --success: #3ebb4a;
         --error: #dd3e3e;
-        --text: #3b3b3b;
+        --text: #2c2c2c;
         --white: #ffffff;
-        --grey: #ececec;
+        --light: #dde8f3;
+        --outline: #6d6d6d;
+        --grey: #aaaaaa;
         --black: #181818;
         
         /* Font Size */
+        --step--3: clamp(0.5rem, .9rem + -0.2vw, 0.7rem);
         --step--2: clamp(0.7813rem, 0.9246rem + -0.185vw, 0.8784rem);
         --step--1: clamp(0.9372rem, 0.9371rem + 0.0006vw, 0.9375rem);
         --step-0: clamp(1rem, 0.9405rem + 0.2381vw, 1.125rem);
@@ -21,50 +26,261 @@
         --step-3: clamp(1.2148rem, 0.8675rem + 1.389vw, 1.944rem);
         --step-4: clamp(1.2962rem, 0.8025rem + 1.9746vw, 2.3328rem);
         --step-5: clamp(1.383rem, 0.7085rem + 2.6978vw, 2.7994rem);
+        --step-6: clamp(2.5rem, 1.6rem + 3.9vw, 4rem);
     }
 
     body{
-        max-width: 1200px;
-        max-width: 90ch;
+        max-width: 48rem;
         margin: 0 auto;
-        background-color: var(--white);
+        background-color: var(--light);
     }
 
     nav, header, main, footer{
-        background-color: var(--grey);
         color: var(--text);
         
     }
 
-    *{
-        font-size: var(--step-0);
+    body > nav{
+        /* background-color: var(--primary); */
+        padding: var(--step-2) var(--step-5);
+        background-color: var(--light);
+        background-color: var(--white);
+    }
+
+        body > nav > ul, body > nav > ol{
+        margin: 0;
+    }
+
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    nav ul li{
+        padding: .4rem 0;
     }
     
+    body > nav ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+
+    header{
+        background-color: var(--primary);
+        color: var(--white);
+        padding: var(--step-6) var(--step-6);
+    }
+
+    *{
+        font-size: var(--step-0);
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+        line-height: 1.4;
+    }
+
     h1{
         font-size: var(--step-5);
+        margin-top: var(--step-3);
+        margin-bottom: var(--step--1);
     }
-
+    
     h2{
         font-size: var(--step-4);
+        margin-top: var(--step-3);
+        margin-bottom: var(--step--1);
     }
-
+    
     h3{
         font-size: var(--step-3);
+        margin-top: var(--step-3);
+        margin-bottom: var(--step--1);
     }
-
+    
     h4{
         font-size: var(--step-2);
+        margin-top: var(--step-3);
+        margin-bottom: var(--step--1);
     }
-
+    
     h5{
         font-size: var(--step-1);
+        margin-top: var(--step-3);
+        margin-bottom: var(--step--1);
     }
-
-    h5{
+    
+    h6{
         font-size: var(--step-0);
+        margin-top: var(--step-3);
+        margin-bottom: var(--step--1);
     }
-
-    small{
+    
+    section > h1,
+    section > h2,
+    section > h3,
+    section > h4,
+    section > h5,
+    section > h6{
+        margin-top: 0;
+    }
+    
+    small, small *{
+        color: var(--outline);
         font-size: var(--step--2);
     }
+
+    section, footer{
+        padding: var(--step-6) var(--step-5);
+        background-color: var(--white);
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+    }
+    
+
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        border: 3px solid var(--text);
+        outline: none;
+        padding: var(--step-1) var(--step-2) var(--step-4);
+        background-color: var(--white);
+    }
+
+    legend{
+        background-color: var(--text);
+        color: var(--white);
+        padding: .2rem .6rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: .8rem;
+
+    }
+
+    label{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-weight: bold;
+        position: relative;
+    }
+
+    label > *{
+        font-weight: normal;
+    }
+
+    input, textarea{
+        padding: .6rem .8rem;
+    }
+
+    label:has(input[type="radio"]),
+    label:has(input[type="checkbox"]){
+        flex-direction: row;
+        gap: .4rem;
+        align-items: center;
+        justify-content: flex-start;
+        padding: .4rem;
+    }
+
+    label:has(input[type="radio"]):hover,
+    label:has(input[type="checkbox"]):hover,
+    label:has(input[type="radio"]):focus,
+    label:has(input[type="checkbox"]):focus{
+        background-color: var(--light);
+    }
+
+    label:has( input[required]):after{
+        content: '*';
+        font-size: 1rem;
+        font-weight: light;
+        color: var(--error);
+        position: absolute;
+        top: 36px;
+        right: 10px;
+    }
+
+    input[type="checkbox"]{
+        width: 1rem;
+        height: 1rem;
+        accent-color: var(--primary);
+        border-radius: 0;
+    }
+
+    textarea{
+        resize: vertical;
+        height: 10rem;
+        min-height: 10rem;
+    }
+
+    textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"]
+    {
+        border: 2px solid var(--text);
+        margin-top: .2rem;
+        box-shadow: 4px 4px 0 var(--text);
+    }
+
+    textarea::placeholder,
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="tel"]::placeholder{
+        color: var(--outline);
+    }
+
+    textarea:focus,
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus{
+        background-color: var(--white);
+    }
+
+    button, .btn{
+        border-radius: 0;
+        border: 2px solid var(--text);
+        padding: .8rem 1.2rem;
+        padding: var(--step--2) var(--step-2);
+        color: var(--white);
+        background-color: var(--text);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    button:hover, button:focus,
+    .btn:hover, .btn:focus{
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    a.btn:has(span){
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    a, a:visited{
+        color: var(--primary);
+        text-decoration: underline dotted;
+    }
+    a:hover, a:focus{
+        color: var(--primary-alt);
+    }
+    a:focus, .btn:focus, button:focus{
+        outline: 5px solid var(--accent)
+    }
+    
+    footer + section,
+    footer + section + aside{
+        padding: var(--step-1) var(--step-2);
+    }
+
 }

@@ -1,13 +1,17 @@
 ---
 layout: /layouts/contact.njk
 title: "Contact Us"
-menutitle: "Contact"
+menutitle: "Contact Us"
 meta:
   description: ""
 date: Last Modified
 tags: menu
 ---
 
-[Home](/)
+<section class="text-center">
 
-# Make this a form and use netlify action to save it
+## We want to hear from you!
+
+Fill in the form below and we will be in touch.
+
+</section>

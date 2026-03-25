@@ -1,5 +1,32 @@
-<footer>
-    <p><small><b>This website was last updated:</b> {{ page.date.toLocaleString("en-AU", { timeZone: 'Australia/Brisbane' }) }}</small></p>
-    <p><small><b>Generated with:</b> {{ eleventy.generator }}</small></p>
-    <p><small>&copy; {% year %}{{ site.separator }}{{ site.title }}</small></p>
+<footer class="border-top">
+    <div class="space-between">
+        <div>
+        <img src="https://www.branchingweb.com.au/img/apple-touch-icon.png" alt="Branching Web logo" loading="lazy" width="50" height="50"/>
+            <h2 class="mb-0">Branching Web</h2>
+            <p>{{ site.excerpt }}</p>
+            <br />
+            <p>Queensland, Australia</p>
+            <p><a href="mailto:sam@branchingweb.com.au">sam@branchingweb.com.au</a></p>
+        </div>
+        <div>
+            <h3>Links</h3>
+            <nav>
+                <ul>
+                    {%- for post in collections.menu -%}
+                        <li><a {% if page.url === post.url %} aria-current="page"{% endif %} href="{{ post.url }}">{{ post.data.menutitle or post.data.title }}</a></li>
+                    {%- endfor -%}
+                </ul>
+            </nav>
+        </div>
+    </div>
 </footer>
+
+<section class="border-top text-center">
+    <p><small>No Cookies. No Trackers. Made by Humans.</small></p>
+    <p><small>&copy; {{site.title}} {% year %}</small></p>
+</section>
+
+<aside class="text-center">
+    <p><small>This website was last updated:</b> {{ page.date.toLocaleString("en-AU", { timeZone: 'Australia/Brisbane' }) }}</p>
+    <p><small>Generated with:</b> <a href="https://www.11ty.dev/" target="_blank">{{ eleventy.generator }}</a></p>
+</aside>

@@ -1,66 +1,69 @@
-<section>
-    <form>
+<section class="border-top">
+    <form id="contact" name="contact" method="POST" data-netlify="true">
         <fieldset>
             <legend>
                 Contact information
             </legend>
-            <label for="name">
-                Full Name
-                <input type="text" name="name" id="input-name" value="" autocomplete="name" required />
+            <label for="input-name">
+                Name
+                <input type="text" placeholder="Firstname Lastname" name="name" id="input-name" value="" autocomplete="name" minLength="3" required />
             </label>
-            <label for="email">
-                Email Address
-                <input type="email" name="email" id="input-email" value="" autocomplete="email" required />
+            <label for="input-email">
+                Email
+                <input type="email" placeholder="email@company.com" name="email" id="input-email" value="" autocomplete="email" required/>
             </label>
-            <label for="phone">
-                Phone Number
-                <input type="tel" name="phone" id="input-phone" value="" autocomplete="tel" required />
+            <label for="input-phone">
+                Phone
+                <input type="tel" placeholder="+614 123 456 78" name="phone" id="input-phone" value="" autocomplete="tel" required />
             </label>
         </fieldset>
         <fieldset>
             <legend>
-                Preferred contact method
+                About your business
             </legend>
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">PHONE</label><br>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">EMAIL</label><br>
-        </fieldset>
-        <fieldset>
-            <legend>
-                About my business
-            </legend>
-            <label for="company-name">
-                Company Name
-                <input type="text" name="company-name" id="input-company-name" value="" autocomplete="organization" required />
+            <label for="input-company-name">
+                Company name
+                <input type="text" placeholder="Company ltd." name="company-name" id="input-company-name" value="" autocomplete="organization" minLength="3" required />
             </label>
-            <label for="company-industry">
+            <label for="input-company-website">
+                Website URL
+                <input type="text" placeholder="www.company.com.au" name="company-website" id="input-company-website" value="" minLength="3" />
+            </label>
+            <label for="input-company-industry">
                 Industry
-                <input type="text" name="company-industry" id="input-company-industry" value="" required />
-            </label>
-            <label for="company-name">
-                Business summary
-                <textarea name="company-summary" id="input-company-summary" value=""></textarea>
+                <input type="text" placeholder="Construction, Real Estate, etc." name="company-industry" id="input-company-industry" value="" autocomplete="off"/>
             </label>
         </fieldset>
         <fieldset>
             <legend>
-                What do I need help with?
+                What can we help you with?
             </legend>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> I have a bike</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> I have a car</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> I have a boat</label><br>
+            <label for="input-help-website">
+                <input type="checkbox" id="input-help-website" name="help-website" value="website" autocomplete="off">
+                Website Design/Development
+            </label>
+            <label for="input-help-application">
+                <input type="checkbox" id="input-help-application" name="help-application" value="application" autocomplete="off">
+                Web Applications/Integrations
+            </label>
+            <label for="input-help-online">
+                <input type="checkbox" id="input-help-online" name="help-online" value="online" autocomplete="off">
+                Business Setup/Management
+            </label>
+            <label for="input-help-workflows">
+                <input type="checkbox" id="input-help-workflows" name="help-workflows" value="workflows" autocomplete="off">
+                Business/AI Workflows
+            </label>
+            <label for="input-help-marketing">
+                <input type="checkbox" id="input-help-marketing" name="help-marketing" value="marketing" autocomplete="off">
+                Marketing/SEO
+            </label>
+            <label for="input-message">
+                Message
+                <textarea placeholder="I am looking for help with..." name="message" id="input-message" value="" autocomplete="off"></textarea>
+            </label>
         </fieldset>
-        <fieldset>
-            <legend>
-                Confirm
-            </legend>
-            <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat" required>
-            <label for="vehicle4"> I consent to Branching Web saving my personal details and contacting me</label><br>
-            <button type="submit">aa</button>
-        </fieldset>
+        <br />
+        <button type="submit">Submit</button>
     </form>
 </section>

@@ -1,8 +1,9 @@
 {
   "title": "Branching Web",
   "domain": "branchingweb.com.au",
+  "excerpt" : "Digital foundations that strengthen small businesses.",
   "url": "https://branchingweb.com.au",
-  "separator":" - ",
+  "separator":" | ",
   "author": {
     "name": "Samuel Huth",
     "email": "sam@branchingweb.com.au",

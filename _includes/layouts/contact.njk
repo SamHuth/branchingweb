@@ -9,6 +9,8 @@
   </head>
   <body id="site" class="lean">
     <a href="#content">Skip to content</a>
+    {% include "partials/navigation_alt.njk" %}
+    {% include "partials/header.njk" %}
     <main id="content">
       {{ content | safe }}
       {% include "partials/contact_form.njk" %}

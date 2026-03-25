@@ -19,7 +19,42 @@
     }
 
     body.lean{
-        max-width: 60ch;
+        max-width: 50ch;
+    }
+
+    .text-center{
+        text-align: center;
+    }
+
+    .dark{
+        background-color: var(--text);
+        color: var(--white);
+    }
+    
+    .light{
+        background-color: var(--light);
+    }
+
+    .btn.small{        
+        padding: var(--step--3) var(--step-0);
+    }
+
+    .btn.light{
+        background-color: var(--secondary);
+        color: var(--text);
+    }
+
+    .btn.light:hover, .btn.light:focus{
+        background-color: var(--white);
+        color: var(--text);
+    }
+
+    .border-top{
+        border-top: 2px solid var(--text);
+    }
+
+    .mb-0{
+        margin-bottom: 0;
     }
 
 }
