@@ -17,6 +17,8 @@
         --black: #181818;
         
         /* Font Size */
+        --step--5: clamp(0.1rem, .7rem + -0.4vw, 0.3rem);
+        --step--4: clamp(0.3rem, .8rem + -0.3vw, 0.5rem);
         --step--3: clamp(0.5rem, .9rem + -0.2vw, 0.7rem);
         --step--2: clamp(0.7813rem, 0.9246rem + -0.185vw, 0.8784rem);
         --step--1: clamp(0.9372rem, 0.9371rem + 0.0006vw, 0.9375rem);
@@ -25,12 +27,12 @@
         --step-2: clamp(1.1385rem, 0.9092rem + 0.9172vw, 1.62rem);
         --step-3: clamp(1.2148rem, 0.8675rem + 1.389vw, 1.944rem);
         --step-4: clamp(1.2962rem, 0.8025rem + 1.9746vw, 2.3328rem);
-        --step-5: clamp(1.383rem, 0.7085rem + 2.6978vw, 2.7994rem);
+        --step-5: clamp(1.683rem, 0.7085rem + 2.6978vw, 2.7994rem);
         --step-6: clamp(2.5rem, 1.6rem + 3.9vw, 4rem);
     }
 
     body{
-        max-width: 48rem;
+        max-width: 50rem;
         margin: 0 auto;
         background-color: var(--light);
     }
@@ -41,10 +43,9 @@
     }
 
     body > nav{
-        /* background-color: var(--primary); */
         padding: var(--step-2) var(--step-5);
-        background-color: var(--light);
         background-color: var(--white);
+        background-color: var(--light);
     }
 
         body > nav > ul, body > nav > ol{
@@ -70,8 +71,11 @@
 
     header{
         background-color: var(--primary);
+        /* background-color: var(--text); */
         color: var(--white);
-        padding: var(--step-6) var(--step-6);
+        padding: var(--step-6) var(--step-5);
+        position: relative;
+        padding-right: 35%;
     }
 
     *{
@@ -116,12 +120,18 @@
         margin-bottom: var(--step--1);
     }
     
-    section > h1,
-    section > h2,
-    section > h3,
-    section > h4,
-    section > h5,
-    section > h6{
+    section > h1:first-child,
+    section > h2:first-child,
+    section > h3:first-child,
+    section > h4:first-child,
+    section > h5:first-child,
+    section > h6:first-child,
+    .grid div > h1:first-child,
+    .grid div > h2:first-child,
+    .grid div > h3:first-child,
+    .grid div > h4:first-child,
+    .grid div > h5:first-child,
+    .grid div > h6:first-child{
         margin-top: 0;
     }
     
@@ -135,13 +145,16 @@
         background-color: var(--white);
     }
 
+    aside small{
+        color: var(--text);
+    }
+
     form{
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
 
     }
-    
 
     fieldset{
         display: flex;
@@ -197,13 +210,13 @@
     }
 
     label:has( input[required]):after{
-        content: '*';
-        font-size: 1rem;
+        content: '*required';
+        font-size: .8rem;
         font-weight: light;
         color: var(--error);
         position: absolute;
-        top: 36px;
-        right: 10px;
+        top: 10px;
+        right: 0px;
     }
 
     input[type="checkbox"]{
@@ -229,6 +242,13 @@
         box-shadow: 4px 4px 0 var(--text);
     }
 
+    textarea:user-invalid,
+    input[type="text"]:user-invalid,
+    input[type="email"]:user-invalid,
+    input[type="tel"]:user-invalid{
+        border-color: var(--error);
+    }
+
     textarea::placeholder,
     input[type="text"]::placeholder,
     input[type="email"]::placeholder,
@@ -239,11 +259,13 @@
     textarea:focus,
     input[type="text"]:focus,
     input[type="email"]:focus,
+    input[type="checkbox"]:focus,
     input[type="tel"]:focus{
         background-color: var(--white);
+        outline: 5px solid var(--accent)
     }
 
-    button, .btn{
+    button, .btn, .btn:visited{
         border-radius: 0;
         border: 2px solid var(--text);
         padding: .8rem 1.2rem;
@@ -258,6 +280,7 @@
     .btn:hover, .btn:focus{
         background-color: var(--black);
         color: var(--white);
+        text-decoration: none;
     }
 
     a.btn:has(span){
@@ -267,12 +290,25 @@
         gap: 1rem;
     }
 
+    button span,
+    .btn span{
+        transition: all ease .2s;
+    }
+
+    button:hover span, button:focus span,
+    .btn:hover span, .btn:focus span{
+        transform: translateX(8px);
+
+    }
+
+
     a, a:visited{
         color: var(--primary);
         text-decoration: underline dotted;
     }
     a:hover, a:focus{
         color: var(--primary-alt);
+        text-decoration: underline solid;
     }
     a:focus, .btn:focus, button:focus{
         outline: 5px solid var(--accent)
@@ -280,7 +316,8 @@
     
     footer + section,
     footer + section + aside{
-        padding: var(--step-1) var(--step-2);
+        padding: var(--step-3) var(--step-4);
     }
+
 
 }

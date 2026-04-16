@@ -8,6 +8,8 @@
         height: 1px;
         overflow: hidden;
         grid-area: "skip";
+        background-color: var(--white);
+        padding: var(--step--3);
     }
     
     [href="#content"]:focus{
@@ -16,6 +18,7 @@
         height: auto;
         left: 1rem;
         top: 1rem;
+        z-index: 1;
     }
 
     body.lean{
@@ -36,16 +39,16 @@
     }
 
     .btn.small{        
-        padding: var(--step--3) var(--step-0);
+        padding: var(--step--5) var(--step--2);
     }
 
     .btn.light{
-        background-color: var(--secondary);
+        background-color: var(--white);
         color: var(--text);
     }
 
     .btn.light:hover, .btn.light:focus{
-        background-color: var(--white);
+        background-color: var(--light);
         color: var(--text);
     }
 
@@ -55,6 +58,48 @@
 
     .mb-0{
         margin-bottom: 0;
+    }
+
+    .pad{
+        padding: var(--step-6) var(--step-5);
+    }
+
+    .p-0{
+        padding: 0;
+    }
+
+    .m-child-0 > *{
+        margin-top: 0;
+    }
+
+    nav#main-nav{
+        position: relative;
+    }
+    /* nav#main-nav:before{
+        content: '';
+        width: calc((100vw - 48rem) / 2);
+        height: 100%;
+        background-color: var(--white);
+        position: absolute;
+        left: calc((-100vw - -48rem) / 2);
+        top:0;
+    }
+    nav#main-nav:after{
+        content: '';
+        width: calc((100vw - 48rem) / 2);
+        height: 100%;
+        background-color: var(--white);
+        position: absolute;
+        right: calc((-100vw - -48rem) / 2);
+        top:0;
+    } */
+
+    .lean header:after,
+    .lean header:before,
+    .lean nav#main-nav:after,
+    .lean nav#main-nav:before
+    {
+        width: 0;
     }
 
 }

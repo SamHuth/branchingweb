@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'humans.txt': 'humans.txt' });
   eleventyConfig.addPassthroughCopy({ 'contact.php': 'contact.php' });
   eleventyConfig.addPassthroughCopy({ 'sitemap.xml': 'sitemap.xml' });
+  eleventyConfig.addPassthroughCopy('img');
 
   // Current Year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
