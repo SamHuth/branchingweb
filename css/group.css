@@ -4,20 +4,19 @@
     .grid{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: 1fr;
         gap: 2px;
         background-color: var(--light);
     }
     
     .grid > div{
-        padding: var(--step-6) var(--step-5);
+        padding: var(--step-3);
         background-color: var(--white);
-        /* padding-bottom: 14rem; */
+        /* display: flex; */
     }
-    .grid > div.full{
-        /* grid-column: span 2; */
-        /* max-width: 100vw; */
+    /* .grid > div > p:has(img){
         grid-column: 1 / -1
-    }
+    } */
 
     header .bg{
         position: absolute;
@@ -34,12 +33,25 @@
         position: relative;
         z-index: 2;
         background-color: var(--text);
-        padding: var(--step--5) var(--step-2);
+        padding: var(--step--5) var(--step-0);
         display: inline;
         line-height: 1.5;
         box-decoration-break: clone; 
         -webkit-box-decoration-break: clone;
     }
+
+    header > p {
+        color: var(--white);
+        position: relative;
+        z-index: 2;
+        display: block;
+        background-color: var(--text);
+        padding: var(--step--3);
+        box-decoration-break: clone; 
+        -webkit-box-decoration-break: clone;
+    }
+
+
     header .img{
         position: absolute;
         right: 0;
@@ -71,9 +83,6 @@
             height: 100%;
         }
 
-        header .bg{
-            /* background: linear-gradient(180deg, rgba(52, 94, 193, .6) 100px, rgba(52, 94, 193, .6) 100%); */
-        }
 
 
     }

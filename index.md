@@ -17,7 +17,7 @@ Starting a business is difficult, and learning new skills consumes your time whe
 
 <br />
 
-We are <span class="title">Branching Web</span>, a small development studio based in Queensland, Australia. We believe in creating resilient software, processes and providing hands-on education around modern digital tools so you can feel confident in the progress of your business.
+We are <span class="title underline">Branching Web</span>, a small development studio based in Queensland, Australia. We believe in creating resilient software, processes and providing hands-on education around modern digital tools so you can feel confident in the progress of your business.
 
 </section>
 
@@ -31,10 +31,10 @@ We focus on the digital parts of your business that need attention when you don'
 
 </div>
 
-<div class="grid border-top">
+<div class="grid">
   <div class="">
 
-  ![](/img/pexels-steve-1509534.jpg)
+  ![](/img/bg-alt.png)
   #### Website Design & Development
   Custom Design, Development, Ecommerce Stores, on-call support. We are available for large projects, critical bug fixes, and scheduled development hours to keep your websites operating efficiently.
   - Web Design
@@ -46,7 +46,7 @@ We focus on the digital parts of your business that need attention when you don'
   </div>
   <div>
 
-  ![](/img/pexels-steve-1509534.jpg)
+  ![](/img/bg-alt.png)
   #### Web Applications
   Custom dashboards, third-party integrations, and systems automation. If your business needs visibility or workflow efficiency, we'll build something that fits your requirements.
   - Dashboards
@@ -56,7 +56,7 @@ We focus on the digital parts of your business that need attention when you don'
   </div>
   <div>
 
-  ![](/img/pexels-steve-1509534.jpg)
+  ![](/img/bg-alt.png)
   #### Business Support
   We help new businesses get the foundational tools right with AI-assisted workflows, business management toools (custom domain email addresses, cloud storage, VPN, password management), SEO, analytics, and marketing processes.
   - Website Audits
@@ -66,7 +66,7 @@ We focus on the digital parts of your business that need attention when you don'
   </div>
   <div>
 
-  ![](/img/pexels-steve-1509534.jpg)
+  ![](/img/bg-alt.png)
   #### Digital Education
   Information for your people on best practices, latest technologies, and how to sift through your data to see how your business operates.
   - Code Tutoring
