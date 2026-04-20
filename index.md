@@ -1,8 +1,10 @@
 ---
 layout: /layouts/home.njk
-title: "Websites and Support for Small Businesses"
+title: "Websites, Marketing and Processes for Small Businesses"
+subtitle: ""
 menutitle: "Home"
 meta:
+  title: "Websites, Marketing, Processes"
   description: "Branching Web is an Australian development studio helping small businesses and entrepreneurs build websites that convert, and find the right tools to solve your business problems."
 date: Last Modified
 tags: menu
@@ -11,7 +13,11 @@ tags: menu
 <section>
 
 ## Digital foundations that strengthen small businesses and entrepreneurs.
-Starting and managing a business is a difficult process, and worrying about websites and technology shouldn't be stressful in this day and age. Branching Web is a development studio that helps small business get a step-up in the digital world. We are here to manage websites, software and processes for the online side of your business, letting you focus on your core products and services. We believe in creating privacy respecting technology that is built to be resilient and efficient in solving your unique problems.
+Starting a business is difficult, and learning new skills consumes your time when you could be focusing on your core product or services. But it doesn't have to be this demanding. Developing strong core foundations gives you back the time and energy, so you can reinvest them back into your services. And that is where we come in...
+
+<br />
+
+We are <span class="title">Branching Web</span>, a small development studio based in Queensland, Australia. We believe in creating resilient software, processes and providing hands-on education around modern digital tools so you can feel confident in the progress of your business.
 
 </section>
 
@@ -19,26 +25,53 @@ Starting and managing a business is a difficult process, and worrying about webs
 <div class="pad m-child-0 dark">
 
 ### Here's how we can help
-This will be some generic paragraph about the services you could expect.
+
+
+We focus on the digital parts of your business that need attention when you don't have the time or resources. With <span class="underline">over 10+ years</span> designing, developing, managing and hosting websites, we understand the _in's and out's_ of maintaining a digital presence.
 
 </div>
+
 <div class="grid border-top">
   <div class="">
 
+  ![](/img/pexels-steve-1509534.jpg)
   #### Website Design & Development
-  We design and develop websites and ecommerce stores that represent your business and scale with your visitors. We are available for projects, long term support, critical bug fixes, and scheduled development hours to keep your website operating efficiently.
+  Custom Design, Development, Ecommerce Stores, on-call support. We are available for large projects, critical bug fixes, and scheduled development hours to keep your websites operating efficiently.
+  - Web Design
+  - Web Development
+  - Ecommerce Development
+  - IT Support
+
 
   </div>
   <div>
 
+  ![](/img/pexels-steve-1509534.jpg)
   #### Web Applications
-  Custom dashboards, third-party integrations, data connections, and systems automation. If your business need visibility or workflow efficiency, we'll build something that solves your problems.
+  Custom dashboards, third-party integrations, and systems automation. If your business needs visibility or workflow efficiency, we'll build something that fits your requirements.
+  - Dashboards
+  - Customer Portals
+  - Automations
 
   </div>
-  <div class="full">
+  <div>
 
+  ![](/img/pexels-steve-1509534.jpg)
   #### Business Support
-  We help new businesses get the foundational tools right: AI-assisted workflows, privacy-focused software setup (custom domain email addresses, cloud storage, VPN, password management), SEO, analytics, and marketing processes.
+  We help new businesses get the foundational tools right with AI-assisted workflows, business management toools (custom domain email addresses, cloud storage, VPN, password management), SEO, analytics, and marketing processes.
+  - Website Audits
+  - SEO Optimisation
+  - Marketing
+
+  </div>
+  <div>
+
+  ![](/img/pexels-steve-1509534.jpg)
+  #### Digital Education
+  Information for your people on best practices, latest technologies, and how to sift through your data to see how your business operates.
+  - Code Tutoring
+  - Consulting
+  - Business Processes
 
   </div>
 </div>
@@ -47,7 +80,11 @@ This will be some generic paragraph about the services you could expect.
 <section class="border-top dark">
 
 ### What makes us different
-Everything we do is designed around tight budgets, rapid iteration and the making your services easier to deliver. We want you to be supported and educated around technology so you have the confidence to drive your ventures forward with technologically independence. 
+Everything we do is designed around tight budgets, rapid iteration and making your services robust. We want you to be supported and educated around technology so you have the confidence to drive your ventures forward with technological independence. 
+
+<!-- <br /> -->
+
+<!-- <a href="/contact" class="btn light">Contact Us <span>→</span></a> -->
 
 </section>
 

@@ -10,8 +10,11 @@
         --success: #3ebb4a;
         --error: #dd3e3e;
         --text: #2c2c2c;
+        --primary: #2c2c2c;
         --white: #ffffff;
         --light: #dde8f3;
+        --light: #f1f2fd;
+        --white: #f1f2fd;
         --outline: #6d6d6d;
         --grey: #aaaaaa;
         --black: #181818;
@@ -29,6 +32,12 @@
         --step-4: clamp(1.2962rem, 0.8025rem + 1.9746vw, 2.3328rem);
         --step-5: clamp(1.683rem, 0.7085rem + 2.6978vw, 2.7994rem);
         --step-6: clamp(2.5rem, 1.6rem + 3.9vw, 4rem);
+
+        /* Font Family */
+
+        --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+        --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+        --font-mono: Menlo, Consolas, Monaco, Adwaita Mono, Liberation Mono, Lucida Console, monospace;
     }
 
     body{
@@ -43,12 +52,13 @@
     }
 
     body > nav{
-        padding: var(--step-2) var(--step-5);
+        /* padding: var(--step-2) var(--step-5); */
+        padding: var(--step-2) var(--step--1);
         background-color: var(--white);
         background-color: var(--light);
     }
 
-        body > nav > ul, body > nav > ol{
+    body > nav > ul, body > nav > ol{
         margin: 0;
     }
 
@@ -61,63 +71,101 @@
         padding: .4rem 0;
     }
     
+    ul{
+        list-style-type: '☀';
+    }
+
+    ul li{
+        padding-left: var(--step--3)
+    }
+
     body > nav ul{
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: flex-end;
         width: 100%;
         align-items: center;
         padding: 0;
+        gap: 1rem;
+    }
+
+    body > nav ul li:first-of-type{
+        justify-self: flex-start;
+        margin-right: auto;
     }
 
     header{
         background-color: var(--primary);
-        /* background-color: var(--text); */
+        background-color: var(--text);
         color: var(--white);
-        padding: var(--step-6) var(--step-5);
+        padding: var(--step-6) var(--step-2);
         position: relative;
-        padding-right: 35%;
+        padding-right: 25%;
+    }
+    
+    header > * {
+        color: var(--white);
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        background-color: var(--text);
+        padding: var(--step--3);
+        box-decoration-break: clone; 
+        -webkit-box-decoration-break: clone;
     }
 
     *{
         font-size: var(--step-0);
-        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
-        line-height: 1.4;
+        font-family: var(--font-sans);  
+        line-height: 1.6
     }
 
     h1{
         font-size: var(--step-5);
+        line-height: var(--step-6);
         margin-top: var(--step-3);
         margin-bottom: var(--step--1);
+        font-family: var(--font-serif);
     }
     
     h2{
         font-size: var(--step-4);
+        line-height: var(--step-5);
         margin-top: var(--step-3);
         margin-bottom: var(--step--1);
+        font-family: var(--font-serif);
     }
     
     h3{
         font-size: var(--step-3);
+        line-height: var(--step-4);
         margin-top: var(--step-3);
         margin-bottom: var(--step--1);
+        font-family: var(--font-serif);
     }
     
     h4{
         font-size: var(--step-2);
+        line-height: var(--step-3);
         margin-top: var(--step-3);
         margin-bottom: var(--step--1);
+        font-family: var(--font-serif);
     }
     
     h5{
         font-size: var(--step-1);
+        line-height: var(--step-2);
         margin-top: var(--step-3);
         margin-bottom: var(--step--1);
+        font-family: var(--font-serif);
     }
     
     h6{
         font-size: var(--step-0);
+        line-height: var(--step-1);
         margin-top: var(--step-3);
         margin-bottom: var(--step--1);
+        font-family: var(--font-serif);
     }
     
     section > h1:first-child,
@@ -146,7 +194,7 @@
     }
 
     aside small{
-        color: var(--text);
+        color: var(--outline);
     }
 
     form{
@@ -174,6 +222,8 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         font-size: .8rem;
+        font-family: var(--font-serif);
+
 
     }
 
@@ -183,6 +233,7 @@
         width: 100%;
         font-weight: bold;
         position: relative;
+        font-family: var(--font-serif);
     }
 
     label > *{
@@ -213,7 +264,7 @@
         content: '*required';
         font-size: .8rem;
         font-weight: light;
-        color: var(--error);
+        color: var(--grey);
         position: absolute;
         top: 10px;
         right: 0px;
@@ -237,9 +288,10 @@
     input[type="email"],
     input[type="tel"]
     {
-        border: 2px solid var(--text);
-        margin-top: .2rem;
+        border: 3px solid var(--text);
+        margin-top: var(--step--4);
         box-shadow: 4px 4px 0 var(--text);
+
     }
 
     textarea:user-invalid,
@@ -274,6 +326,8 @@
         background-color: var(--text);
         text-decoration: none;
         font-weight: bold;
+        font-family: var(--font-serif);
+
     }
     
     button:hover, button:focus,

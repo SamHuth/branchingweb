@@ -2,14 +2,14 @@
     <div class="space-between">
         <div>
         <img src="https://www.branchingweb.com.au/img/apple-touch-icon.png" alt="Branching Web logo" loading="lazy" width="50" height="50"/>
-            <h2 class="mb-0">Branching Web</h2>
+            <h2><a class="btn small primary" href="/">BRANCHING WEB</a></h2>
             <p>{{ site.excerpt }}</p>
             <br />
             <p>Queensland, Australia</p>
             <p><a href="mailto:sam@branchingweb.com.au">sam@branchingweb.com.au</a></p>
         </div>
         <div>
-            <h3>Links</h3>
+            <h3>Pages</h3>
             <nav>
                 <ul>
                     {%- for post in collections.menu -%}
@@ -32,6 +32,6 @@
 </section>
 
 <aside class="text-center">
-    <p><small>This website was last built:</b> {{ page.date.toLocaleString("en-AU", { timeZone: 'Australia/Brisbane' }) }}</p>
-    <p><small>Generated with:</b> <a href="https://www.11ty.dev/" target="_blank">{{ eleventy.generator }}</a></p>
+    <p><small>This website was last built:</b> {{ page.date.toLocaleString("en-AU", { timeZone: 'Australia/Brisbane' }) }}</small></p>
+    <p><small>Generated with:</b> <a href="https://www.11ty.dev/" target="_blank">{{ eleventy.generator }}</a></small></p>
 </aside>
