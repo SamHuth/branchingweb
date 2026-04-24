@@ -2,22 +2,26 @@
 @layer html {
 
     :root{
-        /* Colors */
+        /* COLORS */
+        /* Branch */
         --primary: #345ec1;
         --primary-alt: #211e8b;
         --secondary: #cee3f8;
+        --light: #f1f2fd;
+        --dark: #2c2c2c;
+        
+
+        /* Utility */
         --accent: #ffdc53;
         --success: #3ebb4a;
         --error: #dd3e3e;
-        --text: #2c2c2c;
-        --primary: #2c2c2c;
-        --white: #ffffff;
-        --light: #dde8f3;
-        --light: #f1f2fd;
-        --white: #f1f2fd;
         --outline: #6d6d6d;
+        
+        /* Primitive */
+        --white: #ffffff;
         --grey: #aaaaaa;
         --black: #181818;
+
         
         /* Font Size */
         --step--5: clamp(0.1rem, .7rem + -0.4vw, 0.3rem);
@@ -34,8 +38,7 @@
         --step-6: clamp(2.5rem, 1.6rem + 3.9vw, 4rem);
 
         /* Font Family */
-
-        --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+        --font-serif: "Crimson Pro", serif;
         --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
         --font-mono: Menlo, Consolas, Monaco, Adwaita Mono, Liberation Mono, Lucida Console, monospace;
     }
@@ -47,14 +50,12 @@
     }
 
     nav, header, main, footer{
-        color: var(--text);
+        color: var(--dark);
         
     }
 
     body > nav{
-        /* padding: var(--step-2) var(--step-5); */
         padding: var(--step-2) var(--step--1);
-        background-color: var(--white);
         background-color: var(--light);
     }
 
@@ -73,6 +74,7 @@
     
     ul{
         list-style-type: '☀';
+        padding-left: var(--step--3)
     }
 
     ul li{
@@ -95,12 +97,11 @@
     }
 
     header{
-        background-color: var(--primary);
-        background-color: var(--text);
-        color: var(--white);
+        background-color: var(--dark);
+        color: var(--light);
         padding: var(--step-6) var(--step-2);
         position: relative;
-        padding-right: 25%;
+        padding-right: 20%;
     }
     
     *{
@@ -174,12 +175,15 @@
     
     small, small *{
         color: var(--outline);
-        font-size: var(--step--2);
+        font-size: var(--step--1);
+    }
+    small a{
+        color: inherit;
     }
 
     section, footer{
         padding: var(--step-5) var(--step-5);
-        background-color: var(--white);
+        background-color: var(--light);
     }
 
     aside small{
@@ -197,15 +201,15 @@
         display: flex;
         flex-direction: column;
         gap: 1.4rem;
-        border: 3px solid var(--text);
+        border: 3px solid var(--dark);
         outline: none;
         padding: var(--step-1) var(--step-2) var(--step-4);
-        background-color: var(--white);
+        background-color: var(--light);
     }
 
     legend{
-        background-color: var(--text);
-        color: var(--white);
+        background-color: var(--dark);
+        color: var(--light);
         padding: .2rem .6rem;
         font-weight: bold;
         letter-spacing: 1px;
@@ -253,7 +257,7 @@
         content: '*required';
         font-size: .8rem;
         font-weight: light;
-        color: var(--text);
+        color: var(--dark);
         position: absolute;
         top: 10px;
         right: 0px;
@@ -262,7 +266,7 @@
     input[type="checkbox"]{
         width: 1rem;
         height: 1rem;
-        accent-color: var(--primary);
+        accent-color: var(--dark);
         border-radius: 0;
     }
 
@@ -277,9 +281,9 @@
     input[type="email"],
     input[type="tel"]
     {
-        border: 3px solid var(--text);
+        border: 3px solid var(--dark);
         margin-top: var(--step--4);
-        box-shadow: 4px 4px 0 var(--text);
+        box-shadow: 4px 4px 0 var(--dark);
 
     }
 
@@ -308,11 +312,11 @@
 
     button, .btn, .btn:visited{
         border-radius: 0;
-        border: 2px solid var(--text);
+        border: 2px solid var(--dark);
         padding: .8rem 1.2rem;
         padding: var(--step--2) var(--step-2);
-        color: var(--white);
-        background-color: var(--text);
+        color: var(--light);
+        background-color: var(--dark);
         text-decoration: none;
         font-weight: bold;
         font-family: var(--font-serif);
@@ -321,7 +325,7 @@
     button:hover, button:focus,
     .btn:hover, .btn:focus{
         background-color: var(--black);
-        color: var(--white);
+        color: var(--light);
         text-decoration: none;
     }
 
@@ -352,7 +356,7 @@
 
 
     a, a:visited{
-        color: var(--primary);
+        color: var(--dark);
         text-decoration: underline dotted;
     }
     a:hover, a:focus{

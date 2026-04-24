@@ -11,9 +11,8 @@ tags: menu
 
 <section>
 
-## Talk to us!
+## Let's have a chat
 
-WE want to hear from you so we can start solving your business problems and get your dreams on track. We are available all the time so just send a message and we will reply as soon as we can.
-Fill in the form below and we will be in touch.
+We are here to keep your business goals on track. Fill in your details below and tell us about the areas of your business you want to discuss.
 
 </section>
