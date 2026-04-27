@@ -30,16 +30,16 @@ We are <span class="underline">Branching Web</span>, a small development studio 
 <div class="pad m-child-0 dark">
 
 ### Here's how we help
-We focus on the digital parts of your business that need attention when you don't have the time or resources. With <span class="underline">over 10+ years</span> designing, developing, managing and hosting websites, we understand the _in's and out's_ of maintaining a digital presence.
+We focus on the digital parts of your business that need attention when you don't have the time or resources. With <span class="underline">over 10+ years</span> designing, developing, managing websites, we understand the _in's and out's_ of maintaining a digital presence.
 
 </div>
 
 <div class="grid">
   <div class="">
 
-  ![](/img/bg-alt.png)
+  ![](/img/branching-web-web-development-dithered.png)
   #### Website Design & Development
-  Custom Design, Development, ecommerce and on-call support. We are available for large projects, critical bug fixes, and scheduled development hours.
+  Custom Design, Development, ecommerce and on-call support. We are available for large projects, critical bug fixes and scheduled development hours.
   - Website Design & Development
   - Ecommerce Development
   - Website Audits
@@ -50,18 +50,18 @@ We focus on the digital parts of your business that need attention when you don'
   </div>
   <div>
 
-  ![](/img/bg-alt.png)
+  ![](/img/branching-web-web-applications-dithered.png)
   #### Web Applications
   Custom dashboards, third-party integrations, and systems automation. If your business needs visibility or workflow efficiency, we'll build something that fits.
   - Dashboards
   - Customer Portals
   - Integrations
-  - Data Automations
+  - Data Automation
 
   </div>
   <div>
 
-  ![](/img/bg-alt.png)
+  ![](/img/branching-web-marketing-dithered.png)
   #### Marketing
   Foundational marketing principles for Search Engine Optimisation, brand assets, campaigns, and Customer Relationship Management.
   - Search Engine Optimisation
@@ -72,7 +72,7 @@ We focus on the digital parts of your business that need attention when you don'
   </div>
   <div>
 
-  ![](/img/bg-alt.png)
+  ![](/img/branching-web-book-dithered.png)
   #### Education
   Information for your people on best practices, latest technologies, and how to sift through your data to see how your business operates.
   - Developer Tutoring
@@ -95,23 +95,14 @@ Building confidence is at the core of everything we do. <span class="underline">
 <section class="border-top">
 
 ### We are Branching Web
-
-vision mission values
-
-something else.
-why do we exist and do the things we do.
-
-
-Branching Web is here to support small businesses and help solve unique business problems. We work closely with founders, entrepreneurs, and early-stage teams to help them develop digital technologies and adopt usable systems from day one.
-  
-We believe in building purposeful software that respects your customers and stands the test of time. This means crafting resilient software without fragile dependencies, having a genuine care for your customer's experience and personal data. We also believe that you should fully understand what you're using. We take the time to educate you along the way, so you are aware of what your systems are capable of and how you can iterate on them as you grow.
+We believe in building purposeful software that respects your customers abilities and stands the test of time. We craft resilient software without fragile dependencies and take genuine care for people's experience and personal data. We also believe that you should understand the technology running your business, so we take the time to educate you to show you the capabilities of your systems and how you can iterate on them as you grow.
 
 </section>
 
 <section class="dark border-top">
 
-### Let's have a chat 
-We are here to keep your business goals on track.
+### Let's start the conversation
+We are here to listen and talk about the digital presence of your business and how we can bring your goals to life.
 
 <br />
 

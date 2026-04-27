@@ -1,15 +1,28 @@
 <script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "Person",
+[{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}/img/branching-web-icon-250.png",
+    "image": "{{ site.url }}/img/branching-web-icon-250.png",
+    "email": "mailto:{{ site.author.email }}",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Brisbane",
         "addressCountry": "Australia"
-    },
-    "email": "mailto:{{ site.author.email }}",
-    "jobTitle": "{{ site.author.role }}",
+    }
+},
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
     "name": "{{ site.author.name }}",
-    "url": "{{ site.domain }}"
-}
+    "jobTitle": "{{ site.author.role }}",
+    "email": "mailto:{{ site.author.email }}",
+    "url": "{{ site.url }}",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "{{ site.title }}"
+    }
+}]
 </script>

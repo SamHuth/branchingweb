@@ -25,9 +25,11 @@
             <h3>Pages</h3>
             <nav>
                 <ul>
-                    {%- for post in collections.menu -%}
+                    {# {%- for post in collections.menu -%}
                         <li><a {% if page.url === post.url %} aria-current="page"{% endif %} href="{{ post.url }}">{{ post.data.menutitle or post.data.title }}</a></li>
-                    {%- endfor -%}
+                    {%- endfor -%} #}
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/contact">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
